@@ -12,7 +12,7 @@ class Q :public P
     public:
     void Fahrenheit()
     {
-        cout << "Enter the Fahrinheit : ";
+        cout << "Enter the value : ";
         cin >> n;
         
         f=(1.8*n)+32;
