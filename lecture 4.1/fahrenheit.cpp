@@ -1,45 +1,71 @@
 #include<iostream>
 using namespace std;
 
-class P
+class A
 {  
-    protected:
-	float n ,f ,k;
+    protected :
+    	
+	int a,a1,a2;
+	
+	public :
+			
+		void SBI()
+		{
+			cout << "sbi intrest rate" << endl;
+			cin >> a;
+	    }
+	    void BOB ()
+		{
+			cout << "bob intrest rate" << endl;
+			cin >> a1;
+	    }
+	    void ICICI ()
+		{
+			cout << "icici intrest rate" << endl;
+			cin >> a2;
+	    }
 	
 };
-class Q :public P
-{   
-    public:
-    void Fahrenheit()
-    {
-        cout << "Enter the value : ";
-        cin >> n;
-        
-        f=(1.8*n)+32;
-	}
+class B : public A
+{      
+        public:
+        	
+        	void get()
+        	{
+        		SBI();
+        		cout<< " sbi :"<<a  <<endl;
+        	}
 };
-class R  : public Q
-{   
-   	public :
-   	
-   		void kelvin()
-   		{
-   			k=n+273;
-   		}
-		     
-   void set()
-   {
-  	 cout << "fahrinheit : "<< f << endl ;
-  	 cout << "kelvin : " << k;
-  }
-   
+class c : public A
+{      
+    public:
+	        
+       	void get1()
+       	{
+       		BOB();
+       		cout << " bob : "<< a1 << endl;
+		}
+};
+class D : public A
+{
+    public:
+    
+	    void get2()
+	    {
+	    	ICICI();
+	    	cout << "icici : " << a2 << endl;
+		} 	
 };
 
 int main()
 {
- 	R r1;
-  
-    r1.Fahrenheit();
-    r1.kelvin();
-    r1.set();
+
+  B s1;
+  s1.get();
+  C s2;
+  s2.get1();
+  D s3;
+  s3.get2();
+
+	return 0;
 }
