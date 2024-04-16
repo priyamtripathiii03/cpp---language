@@ -11,17 +11,17 @@ class A
 			
 		void SBI()
 		{
-			cout << "sbi intrest rate" << endl;
+			cout << "sbi interest rate : " << endl;
 			cin >> p;
 	    }
 	    void BOB ()
 		{
-			cout << "bob intrest rate" << endl;
+			cout << "bob interest rate : " << endl;
 			cin >> p1;
 	    }
 	    void ICICI ()
 		{
-			cout << "icici intrest rate" << endl;
+			cout << "icici interest rate value : " << endl;
 			cin >> p2;
 	    }
 	
@@ -33,7 +33,7 @@ class B : public A
         	void get()
         	{
         		SBI();
-        		cout<< " sbi :"<< p << endl;
+        		cout<< " sbi :" << p << endl;
         	}
 };
 class C : public A
@@ -43,7 +43,7 @@ class C : public A
        	void get1()
        	{
        		BOB();
-       		cout << " bob : "<< p1 << endl;
+       		cout << " bob : " << p1 << endl;
 		}
 };
 class D : public A
